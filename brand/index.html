@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unique Cherish — Brand Visual Identity Manual</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #F5F0EB;
+  --brown: #3C2E26;
+  --gold: #C8A87C;
+  --olive: #B5C4A8;
+  --white: #FFFFFF;
+  --gray: #8B7E74;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Inter', -apple-system, sans-serif; background: var(--cream); color: var(--brown); }
+.page { max-width:900px; margin:0 auto; padding:40px 20px; }
+/* Section titles */
+.sec-title { font-family: 'Playfair Display', serif; font-size:36px; color:var(--gold); text-align:center; padding:40px 0 20px; border-top:1px solid var(--olive); margin-top:40px; }
+.sec-sub { text-align:center; font-size:14px; color:var(--gray); margin-bottom:30px; letter-spacing:3px; text-transform:uppercase; }
+/* Hero */
+.hero { text-align:center; padding:80px 0 60px; }
+.hero .logo-mark { margin-bottom:20px; }
+.hero h1 { font-family:'Playfair Display',serif; font-size:42px; color:var(--brown); letter-spacing:12px; }
+.hero h1 .gold { color:var(--gold); }
+.hero .tagline { font-size:12px; color:var(--gold); letter-spacing:6px; text-transform:uppercase; margin-top:12px; }
+/* Color palette */
+.colors { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+.color-card { width:160px; border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(60,46,38,0.08); }
+.color-swatch { height:120px; }
+.color-info { background:white; padding:16px; }
+.color-info .name { font-weight:600; font-size:15px; }
+.color-info .hex { font-size:13px; color:var(--gray); margin:4px 0; }
+.color-info .usage { font-size:11px; color:var(--olive); }
+/* Logo showcase */
+.logo-row { display:flex; gap:40px; justify-content:center; align-items:center; flex-wrap:wrap; padding:20px; }
+.logo-box { background:white; border-radius:16px; padding:40px; text-align:center; box-shadow:0 2px 16px rgba(60,46,38,0.06); }
+.logo-box.dark { background:var(--brown); }
+.logo-box img, .logo-box svg { max-width:280px; }
+.logo-label { font-size:12px; color:var(--gray); margin-top:12px; letter-spacing:2px; }
+/* Typography */
+.type-sample { background:white; border-radius:16px; padding:40px; margin-bottom:20px; box-shadow:0 2px 12px rgba(60,46,38,0.06); }
+.type-h1 { font-family:'Playfair Display',serif; font-size:36px; color:var(--gold); margin-bottom:8px; }
+.type-h2 { font-family:'Playfair Display',serif; font-size:28px; color:var(--brown); margin-bottom:8px; }
+.type-h3 { font-family:'Inter',sans-serif; font-size:20px; font-weight:500; color:var(--brown); margin-bottom:8px; }
+.type-body { font-family:'Inter',sans-serif; font-size:16px; line-height:1.8; color:var(--brown); max-width:600px; }
+.type-caption { font-family:'Inter',sans-serif; font-size:12px; color:var(--gray); }
+.type-meta { font-size:13px; color:var(--gray); margin-top:4px; }
+/* Packaging */
+.pkg-row { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; }
+.pkg-box { width:200px; height:200px; background:white; border-radius:16px; box-shadow:0 4px 20px rgba(60,46,38,0.1); display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; }
+.pkg-box .box-top { position:absolute; top:0; left:0; right:0; height:40px; background:white; border-radius:16px 16px 0 0; border-bottom:1px solid var(--cream); }
+.pkg-box .box-body { text-align:center; }
+.pkg-box .uc-symbol { font-family:'Playfair Display',serif; font-size:18px; color:var(--gold); letter-spacing:6px; }
+.pkg-box .uc-name { font-family:'Playfair Display',serif; font-size:13px; color:var(--brown); }
+.pkg-box .uc-divider { width:40px; height:1px; background:var(--gold); margin:6px auto; }
+.pkg-box .uc-tagline { font-size:7px; color:var(--gray); letter-spacing:2px; }
+/* Thank you card */
+.card-row { display:flex; gap:24px; justify-content:center; flex-wrap:wrap; }
+.card { background:white; border-radius:12px; box-shadow:0 3px 16px rgba(60,46,38,0.08); overflow:hidden; }
+.card.front { width:220px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--cream), white); }
+.card.front .ty { font-family:'Playfair Display',serif; font-size:28px; color:var(--gold); }
+.card.front .name { font-family:'Playfair Display',serif; font-size:20px; color:var(--brown); margin-top:4px; }
+.card.front .heart { font-size:20px; margin-top:12px; }
+.card.back { width:220px; height:300px; padding:24px 16px; display:flex; flex-direction:column; justify-content:center; }
+.card.back .story { font-size:11px; line-height:1.6; color:var(--brown); text-align:center; }
+.card.back .social { font-size:10px; color:var(--gold); text-align:center; margin-top:16px; }
+/* Care card */
+.care-card { width:260px; background:white; border-radius:10px; padding:20px; box-shadow:0 2px 12px rgba(60,46,38,0.06); }
+.care-card .care-title { font-family:'Playfair Display',serif; font-size:15px; color:var(--gold); text-align:center; margin-bottom:12px; }
+.care-card .care-step { font-size:12px; color:var(--brown); margin-bottom:8px; display:flex; align-items:flex-start; gap:8px; }
+.care-card .care-num { color:var(--gold); font-weight:600; min-width:16px; }
+.care-card .care-footer { font-size:9px; color:var(--gray); text-align:center; margin-top:16px; padding-top:12px; border-top:1px solid var(--cream); }
+/* Buttons */
+.btn-row { display:flex; gap:16px; flex-wrap:wrap; align-items:center; padding:20px; background:white; border-radius:12px; }
+.btn-primary { background:var(--gold); color:white; border:none; padding:14px 36px; border-radius:8px; font-family:'Inter',sans-serif; font-size:14px; font-weight:500; cursor:pointer; }
+.btn-outline { background:transparent; color:var(--brown); border:1.5px solid var(--olive); padding:14px 36px; border-radius:8px; font-family:'Inter',sans-serif; font-size:14px; font-weight:500; }
+.btn-text { background:transparent; color:var(--gold); border:none; padding:14px 24px; font-family:'Inter',sans-serif; font-size:14px; font-weight:500; text-decoration:underline; }
+/* Product card */
+.product-grid { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+.product-card { width:220px; background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 12px rgba(60,46,38,0.06); }
+.product-card .prod-img { height:180px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--cream), #FFF8F0); }
+.product-card .prod-img .placeholder { font-size:48px; opacity:0.4; }
+.product-card .prod-info { padding:16px; }
+.product-card .prod-name { font-family:'Playfair Display',serif; font-size:16px; color:var(--brown); }
+.product-card .prod-price { font-size:14px; color:var(--gold); font-weight:500; margin:4px 0 12px; }
+.product-card .prod-badge { display:inline-block; background:var(--olive); color:white; font-size:10px; padding:3px 10px; border-radius:20px; }
+/* Social media template */
+.social-row { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.social-post { width:260px; border-radius:16px; overflow:hidden; box-shadow:0 3px 16px rgba(60,46,38,0.1); }
+.social-post .post-img { height:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; }
+.social-post .post-img.light { background:linear-gradient(180deg, var(--cream), white); }
+.social-post .post-img.dark { background:var(--brown); }
+.social-post .post-overlay { position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(60,46,38,0.7)); }
+.social-post .post-title { font-family:'Playfair Display',serif; font-size:20px; color:white; }
+.social-post .post-sub { font-size:11px; color:rgba(255,255,255,0.8); margin-top:4px; }
+.social-post .post-caption { padding:14px; background:white; font-size:12px; color:var(--brown); line-height:1.5; }
+/* Website mockup */
+.web-mockup { background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 24px rgba(60,46,38,0.1); }
+.web-header { display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-bottom:1px solid var(--cream); }
+.web-logo { font-family:'Playfair Display',serif; font-size:18px; color:var(--brown); letter-spacing:4px; }
+.web-logo .dot { color:var(--gold); }
+.web-nav { display:flex; gap:24px; font-size:13px; color:var(--gray); }
+.web-nav a { color:var(--brown); text-decoration:none; }
+.web-hero { padding:60px 24px; text-align:center; background:linear-gradient(180deg, var(--cream), white); }
+.web-hero h2 { font-family:'Playfair Display',serif; font-size:36px; color:var(--gold); margin-bottom:12px; }
+.web-hero p { font-size:16px; color:var(--gray); max-width:480px; margin:0 auto 24px; line-height:1.6; }
+/* Footer */
+.footer { text-align:center; padding:40px 0; color:var(--gray); font-size:12px; border-top:1px solid var(--cream); margin-top:60px; }
+/* Section dividers */
+.section-label { display:inline-block; background:var(--olive); color:white; font-size:10px; padding:4px 14px; border-radius:20px; letter-spacing:2px; margin-bottom:16px; }
+</style>
+</head>
+<body>
+
+<!-- ====== HERO ====== -->
+<div class="page">
+<div class="hero">
+  <svg width="200" height="70" viewBox="0 0 400 140" style="margin-bottom:20px;">
+    <g transform="translate(200,40)">
+      <path d="M-16,-18 L-16,8 C-16,16 -7,20 0,20 C7,20 16,16 16,8 L16,-18" fill="none" stroke="#3C2E26" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-5" y1="-1" x2="5" y2="-1" stroke="#C8A87C" stroke-width="1.5"/>
+      <line x1="0" y1="-7" x2="0" y2="5" stroke="#C8A87C" stroke-width="1.5"/>
+      <path d="M16,-18 C-8,-18 -8,20 16,20" fill="none" stroke="#3C2E26" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <text x="200" y="90" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" letter-spacing="8" fill="#3C2E26">UNIQUE</text>
+    <text x="200" y="114" text-anchor="middle" font-family="'Playfair Display', serif" font-size="20" letter-spacing="8" fill="#3C2E26">CHERISH</text>
+  </svg>
+  <div class="tagline">Jewelry your skin will love</div>
+</div>
+
+<!-- ====== COLOR PALETTE ====== -->
+<div class="section-label">COLOR SYSTEM</div>
+<h2 class="sec-title" style="border:none;margin-top:0;padding-top:0;">Brand Color Palette</h2>
+<p class="sec-sub">Four Colors. One Identity.</p>
+<div class="colors">
+  <div class="color-card">
+    <div class="color-swatch" style="background:#F5F0EB;"></div>
+    <div class="color-info">
+      <div class="name">Cream White</div>
+      <div class="hex">#F5F0EB</div>
+      <div class="usage">Background · Base</div>
+    </div>
+  </div>
+  <div class="color-card">
+    <div class="color-swatch" style="background:#3C2E26;"></div>
+    <div class="color-info">
+      <div class="name">Warm Brown</div>
+      <div class="hex">#3C2E26</div>
+      <div class="usage">Text · Dark Blocks</div>
+    </div>
+  </div>
+  <div class="color-card">
+    <div class="color-swatch" style="background:#C8A87C;"></div>
+    <div class="color-info">
+      <div class="name">Matte Gold</div>
+      <div class="hex">#C8A87C</div>
+      <div class="usage">Accent · Titles · CTA</div>
+    </div>
+  </div>
+  <div class="color-card">
+    <div class="color-swatch" style="background:#B5C4A8;"></div>
+    <div class="color-info">
+      <div class="name">Sage Green</div>
+      <div class="hex">#B5C4A8</div>
+      <div class="usage">Support · Tropical</div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== LOGO SYSTEM ====== -->
+<div class="section-label">LOGO SYSTEM</div>
+<h2 class="sec-title">Logo Variations</h2>
+<p class="sec-sub">Two formats for every context</p>
+<div class="logo-row">
+  <div class="logo-box">
+    <svg width="280" height="140" viewBox="0 0 400 200">
+      <rect width="400" height="200" fill="none"/>
+      <g transform="translate(200,50)">
+        <path d="M-16,-18 L-16,8 C-16,16 -7,20 0,20 C7,20 16,16 16,8 L16,-18" fill="none" stroke="#3C2E26" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-5" y1="-1" x2="5" y2="-1" stroke="#C8A87C" stroke-width="1.5"/>
+        <line x1="0" y1="-7" x2="0" y2="5" stroke="#C8A87C" stroke-width="1.5"/>
+        <path d="M16,-18 C-8,-18 -8,20 16,20" fill="none" stroke="#3C2E26" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <text x="200" y="104" text-anchor="middle" font-family="'Playfair Display', serif" font-size="22" letter-spacing="8" fill="#3C2E26">UNIQUE</text>
+      <text x="200" y="132" text-anchor="middle" font-family="'Playfair Display', serif" font-size="22" letter-spacing="8" fill="#3C2E26">CHERISH</text>
+      <text x="200" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="4" fill="#C8A87C">JEWELRY YOUR SKIN WILL LOVE</text>
+      <line x1="155" y1="140" x2="245" y2="140" stroke="#C8A87C" stroke-width="0.5"/>
+    </svg>
+    <div class="logo-label">VERSION A — Full Logo</div>
+    <div style="font-size:11px;color:var(--gray);margin-top:4px;">Header · Packaging · Posters</div>
+  </div>
+  <div class="logo-box dark">
+    <svg width="140" height="140" viewBox="0 0 200 200">
+      <rect width="200" height="200" rx="20" fill="none"/>
+      <circle cx="100" cy="100" r="78" fill="none" stroke="#C8A87C" stroke-width="1.5"/>
+      <path d="M70,62 L70,102 C70,118 84,124 100,124 C116,124 130,118 130,102 L130,62" fill="none" stroke="#F5F0EB" stroke-width="3" stroke-linecap="round"/>
+      <rect x="96" y="84" width="8" height="2" fill="#C8A87C"/>
+      <rect x="99" y="81" width="2" height="8" fill="#C8A87C"/>
+      <path d="M130,62 C90,62 90,124 130,124" fill="none" stroke="#F5F0EB" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <div class="logo-label" style="color:var(--cream);">VERSION B — Avatar Icon</div>
+    <div style="font-size:11px;color:var(--gold);margin-top:4px;">Profile · Favicon · Watermark</div>
+  </div>
+</div>
+
+<!-- ====== TYPOGRAPHY ====== -->
+<div class="section-label">TYPOGRAPHY</div>
+<h2 class="sec-title">Font System</h2>
+<p class="sec-sub">Playfair Display + Inter + Noto Sans</p>
+<div class="type-sample">
+  <div class="type-h1">Heading One — Playfair Display 36px</div>
+  <div class="type-meta">font-family: 'Playfair Display', serif · color: #C8A87C · weight: 600</div>
+  <div style="height:20px;"></div>
+  <div class="type-h2">Heading Two — 28px Weight 400</div>
+  <div class="type-meta">font-family: 'Playfair Display', serif · color: #3C2E26</div>
+  <div style="height:20px;"></div>
+  <div class="type-h3">Heading Three — Inter 20px Weight 500</div>
+  <div class="type-meta">font-family: 'Inter', sans-serif · color: #3C2E26</div>
+  <div style="height:20px;"></div>
+  <div class="type-body">
+    Body text — Inter 16px, line-height 1.8. This is where the story lives. 
+    Every word about hypoallergenic jewelry, every guide to sensitive skin care, 
+    every reason why Maria trusts Unique Cherish.
+  </div>
+  <div class="type-caption" style="margin-top:8px;">Captions · Meta · 12px · #8B7E74</div>
+</div>
+
+<!-- ====== PACKAGING ====== -->
+<div class="section-label">PACKAGING</div>
+<h2 class="sec-title">Box & Unboxing</h2>
+<p class="sec-sub">10×10×3cm · White Cardstock · Matte Gold Foil</p>
+<div class="pkg-row">
+  <div class="pkg-box">
+    <div class="box-top"></div>
+    <div class="box-body" style="margin-top:20px;">
+      <div class="uc-symbol">U ✦ C</div>
+      <div style="height:8px;"></div>
+      <div class="uc-name">UNIQUE</div>
+      <div class="uc-name">CHERISH</div>
+      <div class="uc-divider"></div>
+      <div class="uc-tagline">jewelry your skin will love</div>
+    </div>
+  </div>
+  <!-- Open box -->
+  <div class="pkg-box" style="background:var(--cream);">
+    <div style="font-size:36px;opacity:0.5;">✨</div>
+    <div style="font-size:11px;color:var(--gray);margin-top:8px;text-align:center;">
+      Natural raffia paper<br>
+      Suede jewelry card<br>
+      Thank you card<br>
+      Care card<br>
+      SGS QR card
+    </div>
+  </div>
+</div>
+
+<!-- ====== THANK YOU + CARE CARDS ====== -->
+<div style="margin-top:40px;">
+<h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold);text-align:center;margin-bottom:20px;">Insert Cards</h3>
+</div>
+<div class="card-row">
+  <div class="card front">
+    <div class="ty">Thank you,</div>
+    <div class="name">Maria</div>
+    <div class="heart">💛</div>
+    <div style="font-size:9px;color:var(--gray);margin-top:16px;text-align:center;line-height:1.5;max-width:160px;">
+      We believe jewelry should<br>feel like nothing —<br>no itch, no redness,<br>no regret.
+    </div>
+  </div>
+  <div class="care-card">
+    <div class="care-title">CARE FOR YOUR JEWELRY</div>
+    <div class="care-step"><span class="care-num">①</span> Wipe with soft cloth after wear</div>
+    <div class="care-step"><span class="care-num">②</span> Keep away from perfume & chlorine</div>
+    <div class="care-step"><span class="care-num">③</span> Store in box when not wearing</div>
+    <div class="care-footer">
+      316L Stainless Steel · 18K PVD<br>
+      Nickel-free · Hypoallergenic
+    </div>
+  </div>
+  <div class="care-card" style="text-align:center;">
+    <div style="width:80px;height:80px;background:var(--brown);border-radius:8px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+      <span style="color:white;font-size:24px;">QR</span>
+    </div>
+    <div style="font-size:11px;color:var(--brown);">Scan to verify<br>SGS certification</div>
+    <div class="care-footer">Report #: Pending</div>
+  </div>
+</div>
+
+<!-- ====== UI ELEMENTS ====== -->
+<div class="section-label">UI / WEB</div>
+<h2 class="sec-title">Buttons & Elements</h2>
+<p class="sec-sub">Consistent across ucjewel.com</p>
+<div class="btn-row">
+  <button class="btn-primary">Shop Now</button>
+  <button class="btn-outline">Learn More</button>
+  <button class="btn-text">Read the Guide →</button>
+</div>
+
+<!-- ====== PRODUCT CARDS ====== -->
+<div style="margin-top:30px;">
+<h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold);text-align:center;margin-bottom:20px;">Product Cards</h3>
+</div>
+<div class="product-grid">
+  <div class="product-card">
+    <div class="prod-img"><div class="placeholder">💎</div></div>
+    <div class="prod-info">
+      <div class="prod-name">Breeze Stud</div>
+      <div class="prod-price">₱450 · $8</div>
+      <span class="prod-badge">Hypoallergenic</span>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="prod-img"><div class="placeholder">⚪</div></div>
+    <div class="prod-info">
+      <div class="prod-name">Tropic Huggie</div>
+      <div class="prod-price">₱560 · $10</div>
+      <span class="prod-badge">316L Steel</span>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="prod-img"><div class="placeholder">🐚</div></div>
+    <div class="prod-info">
+      <div class="prod-name">Shell Curve</div>
+      <div class="prod-price">₱670 · $12</div>
+      <span class="prod-badge">PVD Gold</span>
+    </div>
+  </div>
+</div>
+
+<!-- ====== SOCIAL MEDIA ====== -->
+<div class="section-label">SOCIAL MEDIA</div>
+<h2 class="sec-title">TikTok & Instagram Templates</h2>
+<p class="sec-sub">Ready-to-use post formats</p>
+<div class="social-row">
+  <div class="social-post">
+    <div class="post-img light">
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold);">NO MORE</div>
+        <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--brown);">ITCHY EARS</div>
+        <div style="width:30px;height:2px;background:var(--gold);margin:12px auto;"></div>
+        <div style="font-size:12px;color:var(--gray);">316L Stainless Steel</div>
+      </div>
+      <div class="post-overlay">
+        <div class="post-title">Save for later 🔖</div>
+      </div>
+    </div>
+    <div class="post-caption">
+      <strong>unique.cherish</strong> Your ears deserve better. 316L hypoallergenic jewelry that won't irritate, fade, or rust — even in Philippine humidity.<br><br>#UniqueCherish #HypoallergenicPH
+    </div>
+  </div>
+  <div class="social-post">
+    <div class="post-img" style="background:linear-gradient(135deg, var(--cream), #E8DDD4);display:flex;align-items:center;justify-content:center;">
+      <div style="text-align:center;">
+        <div style="font-size:40px;">🦶</div>
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--brown);margin-top:8px;">Isle Anklet</div>
+        <div style="font-size:13px;color:var(--gold);margin-top:4px;">₱500 · Coming Soon</div>
+      </div>
+    </div>
+    <div class="post-caption">
+      <strong>unique.cherish</strong> Beach days, no worries. Our upcoming anklet is 316L steel — salt water, sand, and sweat won't touch it.<br><br>Drop a 🦶 if you want early access!
+    </div>
+  </div>
+</div>
+
+<!-- ====== WEBSITE MOCKUP ====== -->
+<div class="section-label">WEBSITE</div>
+<h2 class="sec-title">ucjewel.com Preview</h2>
+<p class="sec-sub">Live at ucjewel.com · GitHub Pages</p>
+<div class="web-mockup">
+  <div class="web-header">
+    <div class="web-logo">UNIQUE<span class="dot">·</span>CHERISH</div>
+    <div class="web-nav">
+      <a href="#">Blog</a>
+      <a href="#">FAQ</a>
+      <a href="#">Shop</a>
+    </div>
+  </div>
+  <div class="web-hero">
+    <h2>Jewelry Your Skin Will Love</h2>
+    <p>316L stainless steel · 18K PVD coating · Hypoallergenic · Made for the Philippine tropics</p>
+    <button class="btn-primary">Explore the Collection</button>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<div class="footer">
+  <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);margin-bottom:4px;">UNIQUE CHERISH</div>
+  <div>https://ucjewel.com · @unique.cherish</div>
+  <div style="margin-top:8px;">© 2026 Unique Cherish · All rights reserved</div>
+</div>
+
+</div><!-- end page -->
+</body>
+</html>
