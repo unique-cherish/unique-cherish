@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="20" fill="#3C2E26"/>
+  <!-- Golden circle border -->
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#C8A87C" stroke-width="1.5"/>
+  <!-- U shape -->
+  <path d="M70,62 L70,102 C70,118 84,124 100,124 C116,124 130,118 130,102 L130,62" 
+        fill="none" stroke="#F5F0EB" stroke-width="3" stroke-linecap="round"/>
+  <!-- Plus accent -->
+  <rect x="96" y="84" width="8" height="2" fill="#C8A87C"/>
+  <rect x="99" y="81" width="2" height="8" fill="#C8A87C"/>
+  <!-- C shape -->
+  <path d="M130,62 C90,62 90,124 130,124" 
+        fill="none" stroke="#F5F0EB" stroke-width="3" stroke-linecap="round"/>
+</svg>
